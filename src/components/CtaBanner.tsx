@@ -18,27 +18,27 @@ import {
 export default function CtaBanner() {
   const highlights = [
     {
-      label: "Zero Confined Space Entry",
-      val: "100%",
-      sub: "No life loss guarantee",
+      label: "Tanks Cleaned",
+      val: "50+",
+      sub: "Hazardous projects completed",
       icon: ShieldCheck,
     },
     {
-      label: "Turnaround Reduction",
-      val: "80%",
-      sub: "Faster return to service",
+      label: "Capacity Serviced",
+      val: "1,000,000 KL",
+      sub: "Storage tanks & sumps cleared",
       icon: Clock,
     },
     {
-      label: "Sludge Oil Reclaimed",
-      val: "95%",
-      sub: "Closed-loop separation",
+      label: "Crude Oil Reclaimed",
+      val: "400,000 KL",
+      sub: "Closed-loop sludge recovery",
       icon: Gauge,
     },
     {
-      label: "Certification Standard",
-      val: "Zone 0",
-      sub: "ATEX & IECEx certified",
+      label: "Zero Human Entry",
+      val: "100%",
+      sub: "ATEX & IECEx Zone 0 safe",
       icon: Layers,
     },
   ];
@@ -71,13 +71,17 @@ export default function CtaBanner() {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
+          <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
+            Proven Industrial Track Record
+          </div>
+
           <h2 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-slate-900 leading-tight">
-            Ready to Revolutionize Your Tank Cleaning &amp; Safety Standards?
+            Advancing Technology For Oil &amp; Gas Sludge Cleaning &amp; Recovery
           </h2>
 
           {/* Description Paragraph */}
           <p className="mt-3 sm:mt-6 text-xs sm:text-sm md:text-base text-slate-700 max-w-2xl mx-auto leading-relaxed font-normal">
-            Eliminate confined space hazards, accelerate turnaround times by up to 80%, and reclaim valuable crude hydrocarbons with Arham&apos;s Zone 0 certified robotic systems.
+            Creating safer and more sustainable industrial environments across India and worldwide. Over 1,000,000 KL of capacity cleaned and 400,000 KL of valuable hydrocarbons reclaimed with zero human entry.
           </p>
         </motion.div>
 

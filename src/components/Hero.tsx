@@ -93,6 +93,9 @@ export default function Hero() {
 
       {/* 3. Text Section (Centered on mobile, positioned at bottom on desktop) */}
       <div className="relative z-10 mt-6 md:mt-0 pb-0 md:pb-14 text-center w-[92%] sm:w-[90%] max-w-5xl mx-auto flex flex-col items-center">
+        {/* Image Content Tagline Badge */}
+    
+
         {/* Main Headline (Clean, Light/Regular, Crisp White, Increased Size on Mobile) with staggered motion */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -100,8 +103,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           className="text-3xl xs:text-4xl sm:text-[44px] md:text-5xl lg:text-[68px] font-normal tracking-tight text-white leading-[1.16] md:leading-[1.12] drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)]"
         >
-          Leading Hazardous Space <br className="hidden sm:inline" />
-          Robotics - From India To The World
+          Indigenous Expertise in Robotic Recovery &amp; Management of Oil &amp; Gas Sludge
         </motion.h1>
 
         {/* Subtext: "Protected by 7 patents" */}
@@ -111,7 +113,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
           className="mt-3 md:mt-4 text-xs xs:text-sm md:text-base font-light tracking-[0.2em] md:tracking-[0.24em] text-slate-300 uppercase drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]"
         >
-          Protected by 7 patents
+          Protected by 7 patents · ATEX &amp; IECEx Zone 0 Certified
         </motion.p>
       </div>
 

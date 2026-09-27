@@ -10,26 +10,26 @@ import { ShieldCheck, Clock, Recycle, Zap, ArrowRight, CheckCircle2 } from "luci
 export default function AboutSystem() {
   const highlights = [
     {
-      title: "100% Zero-Man Entry",
-      desc: "Zero confined space human entry risk.",
+      title: "Fully Automated Robotic Solutions",
+      desc: "Complete non-man entry robotic crawlers engineered for hazardous confined spaces.",
       icon: ShieldCheck,
       color: "text-emerald-600 bg-emerald-50",
     },
     {
-      title: "ATEX Zone 0 Certified",
-      desc: "Intrinsically safe in explosive atmospheres.",
+      title: "Zero Human Entry Into Hazardous Tanks",
+      desc: "ATEX & IECEx Zone 0 spark-proof operation eliminating toxic atmosphere risks.",
       icon: Zap,
       color: "text-amber-600 bg-amber-50",
     },
     {
-      title: "95% Sludge Recovery",
-      desc: "Recovers valuable hydrocarbons directly.",
+      title: "High Recovery of Usable Hydrocarbons",
+      desc: "Closed-loop fluidization & separation reclaiming up to 95% commercial crude.",
       icon: Recycle,
       color: "text-blue-600 bg-blue-50",
     },
     {
-      title: "80% Faster Turnaround",
-      desc: "Accelerates tank return-to-service time.",
+      title: "Reduced Turnaround Time & Downtime",
+      desc: "80% faster turnaround cycles, returning storage assets to production in days.",
       icon: Clock,
       color: "text-indigo-600 bg-indigo-50",
     },
@@ -82,12 +82,16 @@ export default function AboutSystem() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="w-full lg:w-[40%] flex-1 space-y-4 sm:space-y-5"
           >
-            <h2 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-slate-900">
-              Next-Gen Robotic Oil Tank Cleaning
+            <div className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+              Why Choose Arham Oil
+            </div>
+
+            <h2 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-slate-900 leading-tight">
+              Advancing Technology For Oil &amp; Gas Sludge Cleaning &amp; Recovery
             </h2>
 
             <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
-              ATEX and IECEx Zone 0 certified robotic solutions that completely eliminate manual entry into toxic, explosive tank atmospheres while accelerating sludge recovery.
+              We are advancing precision robotic solutions for confined hazardous environments, creating safer and more sustainable operations by completely eliminating human presence from explosive tank atmospheres.
             </p>
 
             {/* Feature Highlights Grid (2x2 Compact) */}
