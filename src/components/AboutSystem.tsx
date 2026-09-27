@@ -82,12 +82,10 @@ export default function AboutSystem() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="w-full lg:w-[40%] flex-1 space-y-4 sm:space-y-5"
           >
-            <div className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
-              Why Choose Arham Oil
-            </div>
+          
 
             <h2 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-slate-900 leading-tight">
-              Advancing Technology For Oil &amp; Gas Sludge Cleaning &amp; Recovery
+              Advanced Robotic Sludge Recovery
             </h2>
 
             <p className="text-xs sm:text-base text-slate-600 leading-relaxed">

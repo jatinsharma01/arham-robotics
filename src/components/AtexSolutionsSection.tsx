@@ -157,25 +157,25 @@ export default function AtexSolutionsSection() {
         </motion.div>
 
         {/* Content Layout Area: Height container for spacing on desktop */}
-        <div className="relative mt-6 sm:mt-8 min-h-[320px] sm:min-h-[460px] lg:min-h-[580px] flex items-end justify-end">
+        <div className="relative mt-8 sm:mt-12 min-h-[420px] xs:min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] flex items-end justify-end">
           
-          {/* Right Side: ATEX Certificate Card with Pagination */}
+          {/* Right Side: ATEX Certificate Card with Pagination (Enlarged) */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="w-full sm:w-auto max-w-[280px] xs:max-w-[340px] flex flex-col items-center sm:items-end relative z-20 pb-4"
+            className="w-full sm:w-auto max-w-[340px] xs:max-w-[400px] sm:max-w-[450px] md:max-w-[490px] lg:max-w-[530px] flex flex-col items-center sm:items-end relative z-20 pb-4"
           >
             
             {/* Certificate White Card Container */}
-            <div className="relative bg-white rounded-xl shadow-xl border border-slate-200/80 p-3 sm:p-4 w-full group">
+            <div className="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200/90 p-4 sm:p-5 lg:p-6 w-full group">
               
               {/* Technical Drawing Corner Brackets */}
-              <span className="absolute -top-2.5 -left-2.5 text-slate-400 font-mono text-sm leading-none select-none">
+              <span className="absolute -top-3 -left-3 text-slate-400 font-mono text-base sm:text-lg leading-none select-none">
                 ┌
               </span>
-              <span className="absolute -bottom-2.5 -right-2.5 text-slate-400 font-mono text-sm leading-none select-none">
+              <span className="absolute -bottom-3 -right-3 text-slate-400 font-mono text-base sm:text-lg leading-none select-none">
                 ┘
               </span>
 
@@ -183,17 +183,17 @@ export default function AtexSolutionsSection() {
               <button
                 type="button"
                 onClick={() => setIsModalOpen(true)}
-                className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-slate-900/90 hover:bg-slate-900 text-white flex items-center justify-center shadow-md transition-all hover:scale-105 cursor-pointer"
+                className="absolute top-4 right-4 sm:top-5 sm:right-5 z-20 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-slate-900/90 hover:bg-slate-900 text-white flex items-center justify-center shadow-lg transition-all hover:scale-105 cursor-pointer"
                 title="Expand Certificate"
                 aria-label="View Full Certificate"
               >
-                <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
 
               {/* Certificate Document Preview with AnimatePresence */}
               <div
                 onClick={() => setIsModalOpen(true)}
-                className="relative w-full aspect-[3/4] rounded-lg overflow-hidden border border-slate-100 bg-slate-50 cursor-pointer"
+                className="relative w-full aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 cursor-pointer shadow-inner"
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -208,7 +208,7 @@ export default function AtexSolutionsSection() {
                       src={currentCert.src}
                       alt={currentCert.title}
                       fill
-                      className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
+                      className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.03]"
                     />
                   </motion.div>
                 </AnimatePresence>
@@ -216,33 +216,33 @@ export default function AtexSolutionsSection() {
             </div>
 
             {/* Bottom Info & Pagination Controls Bar */}
-            <div className="mt-3 sm:mt-4 flex flex-col xs:flex-row items-start xs:items-center justify-between w-full gap-2 px-1">
+            <div className="mt-4 sm:mt-5 flex flex-col xs:flex-row items-start xs:items-center justify-between w-full gap-3 px-1 sm:px-2">
               {/* Certificate Identifier Text */}
-              <div className="text-left text-xs text-slate-800 leading-tight">
-                <p className="font-semibold text-slate-900 tracking-tight">
+              <div className="text-left leading-snug">
+                <p className="font-bold text-slate-900 text-sm sm:text-base tracking-tight">
                   {currentCert.code}
                 </p>
-                <p className="text-[11px] text-slate-600 mt-0.5">
+                <p className="text-xs sm:text-sm text-slate-700 font-medium mt-0.5">
                   {currentCert.title}
                 </p>
-                <p className="text-[11px] text-slate-600">
+                <p className="text-xs sm:text-sm text-slate-500">
                   {currentCert.subtitle}
                 </p>
               </div>
 
               {/* Pager: < 1/5 > */}
-              <div className="flex items-center gap-1.5 shrink-0 bg-white/80 backdrop-blur-xs px-2.5 py-1.5 rounded-lg border border-slate-300/60 shadow-xs">
+              <div className="flex items-center gap-2 shrink-0 bg-white/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-300/70 shadow-sm">
                 <motion.button
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.88 }}
                   type="button"
                   onClick={handlePrev}
-                  className="text-slate-600 hover:text-slate-950 p-0.5 transition-colors cursor-pointer"
+                  className="text-slate-600 hover:text-slate-950 p-1 transition-colors cursor-pointer"
                   aria-label="Previous Certificate Page"
                 >
-                  <ChevronLeft className="w-4 h-4" />
+                  <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
                 </motion.button>
-                <span className="text-xs font-semibold text-slate-700 tracking-wider px-1 select-none">
+                <span className="text-xs sm:text-sm font-bold text-slate-800 tracking-wider px-1.5 select-none">
                   {currentPage}/{totalPages}
                 </span>
                 <motion.button
@@ -250,10 +250,10 @@ export default function AtexSolutionsSection() {
                   whileTap={{ scale: 0.88 }}
                   type="button"
                   onClick={handleNext}
-                  className="text-slate-600 hover:text-slate-950 p-0.5 transition-colors cursor-pointer"
+                  className="text-slate-600 hover:text-slate-950 p-1 transition-colors cursor-pointer"
                   aria-label="Next Certificate Page"
                 >
-                  <ChevronRight className="w-4 h-4" />
+                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </motion.button>
               </div>
             </div>

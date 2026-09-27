@@ -71,12 +71,10 @@ export default function CtaBanner() {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
-            Proven Industrial Track Record
-          </div>
+      
 
           <h2 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-slate-900 leading-tight">
-            Advancing Technology For Oil &amp; Gas Sludge Cleaning &amp; Recovery
+            Advancing Robotic Sludge Recovery
           </h2>
 
           {/* Description Paragraph */}
